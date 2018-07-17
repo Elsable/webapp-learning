@@ -1,5 +1,5 @@
 const fs = require('fs');
-fs.readFile('../text/kakugen.txt', 'utf-8', kakugenLoaded);
+fs.readFile('../../text/kakugen.txt', 'utf-8', kakugenLoaded);
 
 function kakugenLoaded(err, data) {
   if (err) {
