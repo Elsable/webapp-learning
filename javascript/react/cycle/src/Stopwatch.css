@@ -1,0 +1,9 @@
+.disp {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.stopwatch {
+  display: block;
+  margin: 0 auto;
+}
