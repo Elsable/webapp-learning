@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- Libraries -->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script type="text/babel">
+      const title = "書道"
+      const url = "http://uta.pw/shodou/img/28/214.png"
+      const msg =
+        <div>
+          <h1>{title}</h1>
+          <p><img src={url}/></p>
+        </div>
+      const elm = document.querySelector('#root')
+      ReactDOM.render(msg, elm)
+    </script>
+  </body>
+</html>

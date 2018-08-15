@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- Libraries -->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script type="text/babel">
+      ReactDOM.render(getDOM(), document.querySelector('#root'))
+      function getDOM() {
+        const style1 = {
+          color: 'blue',
+          backgroundColor: '#fff0f0',
+          fontSize: '2em'
+        }
+        const style2 = {
+          "color": "red",
+          "background-color": "#f0f0ff",
+          "font-size": "2em"
+        }
+        return (
+          <div>
+            <p style={style1}>探すのに時があり</p>
+            <p style={style2}>捨てるのに時がある</p>
+          </div>
+        )
+      }
+    </script>
+  </body>
+</html>
